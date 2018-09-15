@@ -6,7 +6,11 @@ body {
 }
 
 .navbar {
-  /* display: flex; */
+  background-color: rgb(148, 244, 243);
+}
+
+.jumbotron {
+  background-color: rgb(148, 244, 243);
 }
 
 .bigboi {
