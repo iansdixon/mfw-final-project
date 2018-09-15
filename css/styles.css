@@ -1,8 +1,14 @@
 @import  url('https://fonts.googleapis.com/css?family=Anton|Titillium+Web:300,400,700');
 
+:root {
+  --titillium: 'Titillium', sans-serif;
+  --web: 'Web', sans-serif;
+}
+
 body {
   position: relative;
   top: 50px;
+  font-family: var(--web);
 }
 
 .navbar {
