@@ -3,6 +3,7 @@
 :root {
   --titillium: 'Titillium', sans-serif;
   --web: 'Web', sans-serif;
+  --darkred: #fb1401;
 }
 
 body {
@@ -15,10 +16,36 @@ body {
   background-color: rgb(148, 244, 243);
 }
 
+.navbar-toggle {
+  color: black;
+}
+
 .jumbotron {
   background-color: rgb(148, 244, 243);
 }
 
-.bigboi {
-  height: 1000px;
+.title {
+  font-family: var(--titillium);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--darkred);
+}
+
+.subtitle {
+  color: var(--darkred);
+  font-family: var(--titillium);
+  margin-top: 10px;
+}
+
+.rows {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* ---------- About Page ---------- */
+
+.middle {
+  margin-left: 15%;
+  margin-right: 15%;
 }
