@@ -26,6 +26,10 @@ body {
   padding: 10px 15px;
 }
 
+.nav {
+  margin-right: 10px;
+}
+
 span.fa.fa-bars {
   color: white;
   font-size: 25px;
@@ -54,11 +58,6 @@ span.fa.fa-bars {
 
 /* ---------- About Page ---------- */
 
-.holder {
-  display: flex;
-  justify-content: center;
-}
-
 .social {
   display: flex;
   justify-content: center;
@@ -71,4 +70,10 @@ span.fa.fa-bars {
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
+  min-width: 200px;
+}
+
+.head > h4 {
+  margin-top: 20px;
+  font-family: var(--anton);
 }
