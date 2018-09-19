@@ -56,6 +56,11 @@ span.fa.fa-bars {
   font-family: var(--anton);
   margin-top: 10px;
 }
+/* ---------- Home Page ---------- */
+
+.port-pic {
+  border: 3px solid black;
+}
 
 /* ---------- About Page ---------- */
 
