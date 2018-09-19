@@ -66,6 +66,10 @@ span.fa.fa-bars {
   max-height: 220px;
 }
 
+.avatar {
+  border: 4px solid black;
+}
+
 .myinfo {
   display: flex;
   flex-wrap: wrap;
@@ -76,4 +80,12 @@ span.fa.fa-bars {
 .head > h4 {
   margin-top: 20px;
   font-family: var(--anton);
+}
+
+/*-------- media queries ------- */
+
+@media only screen and (max-width: 768px) {
+  .social {
+    margin-left: 25%;
+  }
 }
