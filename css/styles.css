@@ -31,6 +31,11 @@ body {
   margin-right: 10px;
 }
 
+.collapse {
+  background-color: var(--gray);
+  border-color: none;
+}
+
 span.fa.fa-bars {
   color: white;
   font-size: 25px;
@@ -87,6 +92,14 @@ span.fa.fa-bars {
 .head > h4 {
   margin-top: 20px;
   font-family: var(--anton);
+}
+
+.skills > p {
+  font-size: 16px;
+}
+
+.dev-about {
+  margin-left: 15px;
 }
 
 /*--------- contact page ---------*/
