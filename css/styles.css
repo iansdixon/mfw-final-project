@@ -20,6 +20,7 @@ body {
 .navbar {
   background-color: var(--gray);
   border: none;
+  height: 75px;
 }
 
 .navbar-brand {
