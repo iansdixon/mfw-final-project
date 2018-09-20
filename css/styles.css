@@ -91,7 +91,9 @@ span.fa.fa-bars {
 
 .head > h4 {
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: var(--anton);
+  font-size: 30px;
 }
 
 .skills > p {
