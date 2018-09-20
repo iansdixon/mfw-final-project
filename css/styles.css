@@ -1,5 +1,124 @@
-@import  url('https://fonts.googleapis.com/css?family=Anton|Titillium+Web:300,400,700');
+@import  url('https://fonts.googleapis.com/css?family=Anton|Exo:400,700');
+
+:root {
+  --exo: 'Exo', sans-serif;
+  --anton: 'Anton', sans-serif;
+  --darkred: #fb1401;
+  --gray: rgb(148,244,243);
+}
 
 body {
   position: relative;
+  top: 50px;
+  font-family: var(--exo);
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--gray);
+  border: none;
+  height: 75px;
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+.nav {
+  margin-right: 10px;
+}
+
+.collapse {
+  background-color: var(--gray);
+  border-color: none;
+}
+
+span.fa.fa-bars {
+  color: white;
+  font-size: 25px;
+}
+
+.navbar-toggle {
+  border: none;
+}
+
+.jumbotron {
+  background-color: var(--gray);
+  padding: 20px;
+}
+
+.title {
+  font-family: var(--anton);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--darkred);
+}
+
+.subtitle {
+  color: var(--darkred);
+  font-family: var(--anton);
+  margin-top: 10px;
+}
+/* ---------- Home Page ---------- */
+
+.port-pic {
+  border: 3px solid black;
+}
+
+/* ---------- About Page ---------- */
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 180px;
+  max-height: 220px;
+}
+
+.avatar {
+  border: 4px solid black;
+}
+
+.myinfo {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  min-width: 200px;
+}
+
+.head > h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: var(--anton);
+  font-size: 30px;
+}
+
+.skills > p {
+  font-size: 16px;
+}
+
+.dev-about {
+  margin-left: 15px;
+}
+
+/*--------- contact page ---------*/
+
+.icon {
+  font-size: 88px;
+}
+
+/*-------- media queries ------- */
+
+@media only screen and (max-width: 768px) {
+  .social {
+    margin-left: 25%;
+  }
+
+  .icon {
+    font-size: 64px;
+  }
+
 }

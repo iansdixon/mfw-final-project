@@ -9,10 +9,87 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	
+	<div class="container-fluid">
+
+		<header>
+      <nav id="navbar-scroll" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </button>
+            <div class="navbar-brand">
+              <img class="img-responsive" src="img/logo.png" alt="Logo">
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+		<div class="jumbotron">
+  		<div class="container text-center">
+    		<h2 class="title">Portfolio</h2>
+				<h3 class="subtitle">Check out my work</h3>
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="col-md-6 col-sm-6 col-xs-12">
+		    <a href="https://iansdixon.github.io/final-project/" class="thumbnail" target="_blank">
+		      <img class="img-responsive" src="img/site_1.png" alt="first site">
+		    </a>
+		  </div>
+
+		  <div class="col-md-6 col-sm-6 col-xs-12">
+		    <a href="https://iansdixon.github.io/mfw-restaurante/" class="thumbnail" target="_blank">
+		      <img class="img-responsive" src="img/site_2.png" alt="second site">
+		    </a>
+		  </div>
+		</div>
+
+		<div class="row">
+		  <div class="col-md-6 col-sm-6 col-xs-12">
+		    <a href="https://iansdixon.github.io/mfw-pet-store/" class="thumbnail" target="_blank">
+		      <img class="img-responsive" src="img/site_3.png" alt="first site">
+		    </a>
+		  </div>
+
+		  <div class="col-md-6 col-sm-6 col-xs-12">
+		    <a href="https://iansdixon.github.io/cloudstuff/" class="thumbnail" target="_blank">
+		      <img class="img-responsive" src="img/site_4.png" alt="second site">
+		    </a>
+		  </div>
+		</div>
+
+</div>
 
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function() {
+      $('body').scrollspy({ target: '#navbar-scroll', offset: 50 });
+      $(".navbar a").on('click', function(event) {
+       if (this.hash !== "") {
+        event.preventDefault();
+        const hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+       }
+      });
+    });
+  </script>
 </body>
 </html>
